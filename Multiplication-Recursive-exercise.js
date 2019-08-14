@@ -1,13 +1,13 @@
 function kaliTerusRekursif(angka) {
-  var str = String(angka);
-  var arr = str[0];
-  if (str.length == 1){
-    return str;
-  } else {
-    for (var i = 1; i < str.length; i++){
-      arr *= str[i];
+    var str = String(angka);
+    var arr = str[0];
+    if (str.length == 1){
+        return str;
+    } else {
+        for (var i = 1; i < str.length; i++){
+            arr *= str[i];
+        }
     }
-  }
     return kaliTerusRekursif(arr);
 }
 
